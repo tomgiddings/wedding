@@ -21,7 +21,6 @@
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero {
-  margin-top: 4em;
   background-image: url('../images/housemeadow.jpg');
   background-position: 50% 50%;
   background-size: cover;
@@ -209,6 +208,7 @@
     padding: 14rem 0 15rem;
   }
   .hero {
+    margin-top: 4em;
     padding: 16rem 0 14rem;
   }
   .navigation {
@@ -249,6 +249,7 @@
     padding: 20rem 0 19rem;
   }
   .hero {
+    margin-top: 4em;
     padding: 22rem 0;
   }
   .navigation {
