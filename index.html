@@ -44,8 +44,16 @@
       <div class="container">
         <div class="row">
           <div class="column">
-            <div class="navigation-launch"><i class="fas fa-bars"></i>&nbsp;Menu</div>
-            <ul>
+            <div class="navigation-launch"><i class="fas fa-bars"></i></div>
+            <ul class="full">
+              <li><a href="#top">Welcome</a></li>
+              <li><a href="#rsvp">RSVP</a></li>
+              <li><a href="#venue">The Venue</a></li>
+              <li><a href="#gettingthere">Getting There</a></li>
+              <li><a href="#stay">Where To Stay</a></li>
+              <li><a href="#giftlist">Gift List</a></li>
+            </ul>
+            <ul class="mini">
               <li><a href="#top">Welcome</a></li>
               <li><a href="#rsvp">RSVP</a></li>
               <li><a href="#venue">The Venue</a></li>
@@ -180,9 +188,15 @@
   $(".navigation-launch").click(function(t) {
     t.preventDefault(),
     t.stopPropagation(),
-    $(".navigation ul").fadeToggle("fast", "linear")
+    $(".navigation .mini").fadeToggle("fast", "linear")
   });
 
+  $("html").click(function(t) {
+    $(".navigation .mini").hide("fast", "linear")
+  });
+  $( window ).resize(function() {
+    $(".navigation .mini").hide("fast", "linear")
+  });
   </script>
 
 <!-- End Document
