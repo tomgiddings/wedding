@@ -207,7 +207,8 @@
   .section {
     padding: 12rem 0 11rem;
   }
-  .hero {
+  .extra-container {
+    margin-top: 5em;
   }
 }
 
