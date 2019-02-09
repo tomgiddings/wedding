@@ -55,10 +55,10 @@
   display: table;
 }
 .circle .inner {
-  padding: 3em;
+  padding: 2.5em;
 }
 .circle-container {
-  min-width: 20em;
+  min-width: 30em;
   min-height: 22em;
 }
 .extra-container {
@@ -210,6 +210,9 @@
   .extra-container {
     margin-top: 5em;
   }
+  .circle .inner {
+    padding: 3em;
+  }
 }
 
 /* Bigger than 750 */
@@ -259,6 +262,9 @@
     position: absolute;
     bottom: 0;
   }
+  .circle .inner {
+    padding: 3em;
+  }
 }
 
 /* Bigger than 1000 */
@@ -296,5 +302,8 @@
   }
   .extra-container {
     margin-top: 5em;
+  }
+  .circle .inner {
+    padding: 3em;
   }
 }
