@@ -55,11 +55,11 @@
   display: table;
 }
 .circle .inner {
-  padding: 2.5em;
+  padding: 3em;
 }
 .circle-container {
   min-width: 30em;
-  min-height: 30em;
+  min-height: 22em;
 }
 .extra-container {
   margin-top: 0;
