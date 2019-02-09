@@ -158,19 +158,14 @@
   var deadline = new Date("Jul 27, 2019 14:00:00");
 
   var deadlineTime = deadline.getTime(); 
-  var x = setInterval(function() { 
   var now = new Date().getTime(); 
   var t = deadlineTime - now; 
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-  var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
-  var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+  var days = Math.ceil(t / (1000 * 60 * 60 * 24));
   document.getElementById("countdown").innerHTML = days + " days to go!"; 
-      if (t < 0) { 
-          clearInterval(x); 
-          document.getElementById("countdown").innerHTML = ""; 
-      } 
-  }, 1000);
+  if (t < 0) { 
+    clearInterval(x); 
+    document.getElementById("countdown").innerHTML = ""; 
+  } 
 
   /*
   * Scrolling on anchor click
