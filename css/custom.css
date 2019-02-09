@@ -294,4 +294,7 @@
   .navigation-launch {
     display: none;
   }
+  .extra-container {
+    margin-top: 5em;
+  }
 }
