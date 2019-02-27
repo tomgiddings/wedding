@@ -183,10 +183,13 @@
   text-transform: uppercase;
 }
 
-/* Help
+/* RSVP, Stay
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #rsvp, #stay {
   border-bottom: 1px solid #ddd;
+}
+#rsvp .button {
+  font-size: 0.9em; /* Because email addresses are long */
 }
 
 /* Gift List
