@@ -35,7 +35,7 @@
 .circle {
   border-radius: 50%;
   color: #fff;
-  display: table-cell; 
+  display: inline-block; 
   background: rgba(100, 149, 237, 0.8);
   overflow: hidden;
   white-space: nowrap;
@@ -54,8 +54,9 @@
   padding: 3em;
 }
 .circle-container {
-  min-width: 30em;
+  max-width: 100%;
   min-height: 22em;
+  font-size: 0.82em
 }
 .extra-container {
   margin-top: 0;
@@ -213,11 +214,17 @@
   .section {
     padding: 12rem 0 11rem;
   }
+  .extra-details {
+    padding-left: 0.8em
+  }
   .extra-container {
     margin-top: 5em;
   }
   .circle .inner {
     padding: 3em;
+  }
+  .circle-container {
+    font-size: 1em
   }
 }
 
