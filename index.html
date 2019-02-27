@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -30,6 +30,7 @@
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
+  <script src="js/parallax.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,7 +52,7 @@
               <li><a href="#venue">The Venue</a></li>
               <li><a href="#gettingthere">Getting There</a></li>
               <li><a href="#stay">Where To Stay</a></li>
-              <li><a href="#giftlist">Gift List</a></li>
+              <li><a href="#gift">Gift List</a></li>
             </ul>
             <ul class="mini">
               <li><a href="#top">Welcome</a></li>
@@ -59,7 +60,7 @@
               <li><a href="#venue">The Venue</a></li>
               <li><a href="#gettingthere">Getting There</a></li>
               <li><a href="#stay">Where To Stay</a></li>
-              <li><a href="#giftlist">Gift List</a></li>
+              <li><a href="#gift">Gift List</a></li>
             </ul>
           </div>
         </div>
@@ -70,7 +71,7 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="section hero" id="top">
+  <div class="section hero" id="top" data-parallax="scroll" data-image-src="images/housemeadow.jpg" data-speed="0.9">
     <div class="container">
       <div class="row">
         <div class="one-half column circle-container">
@@ -93,7 +94,7 @@
     </div>
   </div>
 
-  <div class="section get-help" id="rsvp">
+  <div class="section" id="rsvp">
     <div class="container">
       <h3 class="section-heading"><i class="far fa-envelope-open"></i><br/>RSVP</h3>
       <p class="section-description">Please respond by <strong>1st July</strong> and let us know if you're coming - also please let us know if you have any dietary requirements!</p>
@@ -101,7 +102,7 @@
     </div>
   </div>
 
-  <div class="section venue" id="venue">
+  <div class="section" id="venue" data-parallax="scroll" data-image-src="images/housemeadowbarn.jpg" data-speed="0.8">
     <div class="container">
       <h3 class="section-heading"><i class="fas fa-glass-cheers"></i><br/>The Venue</h3>
       <p class="section-description">Both the ceremony and reception will take place at The House Meadow in Kent.</p>
@@ -111,7 +112,7 @@
     </div>
   </div>
 
-  <div class="section values" id="gettingthere">
+  <div class="section" id="gettingthere">
 
     <div class="container">
       <div class="row">
@@ -135,7 +136,7 @@
     </div>
   </div>
 
-  <div class="section get-help" id="stay">
+  <div class="section" id="stay">
     <div class="container">
       <h3 class="section-heading"><i class="fas fa-bed"></i><br/>Where To Stay</h3>
       <p class="section-description">There are a number of small hotels and bed &amp; breakfasts in the area. If you book through booking.com, you can get 10% off using the link below.</p>
@@ -143,11 +144,11 @@
     </div>
   </div>
 
-  <div class="section categories" id="giftlist">
+  <div class="section" id="gift" data-parallax="scroll" data-image-src="./images/france.jpg" data-speed="0.8">
     <div class="container">
       <h3 class="section-heading"><i class="fas fa-gift"></i><br/>Gift List</h3>
       <p class="section-description">It means a lot to us that you can make it on the day, and many guests are travelling a significant distance or staying overnight to do so. Please don't feel obliged to get us anything - if you wish to however, donations to our honeymoon fund would be very appreciated:</p>
-      <a class="button button-primary" href="https://paypal.me/pools/c/8bNPdQkTfw">Our Honeymoon Fund (PayPal)</a>
+      <a class="button button-primary" href="https://paypal.me/pools/c/8bNPdQkTfw"><i class="fab fa-paypal"></i> Our Honeymoon Fund (PayPal)</a>
     </div>
   </div>
 
