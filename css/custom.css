@@ -89,12 +89,12 @@
 
 /* Getting There
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.gettingthere {
+#gettingthere {
   position: relative;
   background: linear-gradient(110deg, rgba(100, 149, 237, 0.8) 60%, rgba(100, 149, 237, 1.0) 60%);
   padding-bottom: 5rem;
 }
-.gettingthere::before {
+#gettingthere::before {
   content:"";
   display: block;
   height: 100%;
@@ -103,17 +103,6 @@
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
-}
-.value-multiplier {
-  margin-bottom: .5rem;
-  color: #11DFC7;
-}
-.value-heading {
-  margin-bottom: .3rem;
-}
-.value-description {
-  opacity: .8;
-  font-weight: 300;
 }
 
 /* Venue
