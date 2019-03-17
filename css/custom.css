@@ -14,6 +14,13 @@
   border-radius: 0.5em;
   padding: 0.5em;
 }
+.horizontal-list {
+  list-style: none;
+}
+.horizontal-list li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
