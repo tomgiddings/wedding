@@ -87,7 +87,7 @@
         <div class="one-half column extra-container">
           <div class="extra-details">
             <span id="countdown"></span>
-            <a class="button button-primary" href="#rsvp">RSVP</a>
+            <a id="rsvp-link" class="button button-primary" href="#rsvp">RSVP</a>
           </div>
         </div>
       </div>
@@ -193,11 +193,13 @@
   var now = new Date().getTime(); 
   var t = deadlineTime - now; 
   var days = Math.ceil(t / (1000 * 60 * 60 * 24));
-  document.getElementById("countdown").innerHTML = days + " days to go!"; 
-  if (t < 0) { 
-    clearInterval(x); 
+  if (t < 0) {
+    $("#rsvp-link").hide();
     document.getElementById("countdown").innerHTML = ""; 
-  } 
+  }
+  else {
+    document.getElementById("countdown").innerHTML = days + " days to go!";
+  }
 
   /*
   * Scrolling on anchor click
